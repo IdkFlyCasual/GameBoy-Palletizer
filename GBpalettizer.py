@@ -14,8 +14,8 @@ def convert_to_gameboy_resolution(input_image_path, output_image_path):
     # Convert the image to grayscale
     grayscale_image = image.convert("L")
 
-    # Resize the image to Game Boy resolution
-    resized_image = grayscale_image.resize((gameboy_width, gameboy_height))
+    # Uncomment to scale the image to Game Boy resolution
+    # resized_image = grayscale_image.resize((gameboy_width, gameboy_height))
 
     # Create a new image with the Game Boy palette
     gameboy_image = Image.new("P", (gameboy_width, gameboy_height))
